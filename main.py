@@ -1,4 +1,4 @@
-
+# Read a PDF file , Extract the text, Write a Text to a Go Program Watcher folder in append mode.
 
 import os
 import PyPDF2
