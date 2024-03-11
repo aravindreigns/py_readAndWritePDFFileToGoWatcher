@@ -13,14 +13,14 @@ def extract_text_from_pdf(pdf_path):
         for page_number in range(num_pages):
             page = pdf_reader.pages[page_number]
             text += page.extract_text()
-
+    print("Text extraction from PDF completed!")
     return text
 
 
 def write_to_file(output_path, text):
     with open(output_path, "a", encoding="utf-8") as output_file:
         output_file.write(text)
-
+    print("Extracted Text sent to text file in watcher folder!")
 
 def main():
     # Replace these paths with your specific folder and file paths
